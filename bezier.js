@@ -125,7 +125,7 @@ canvas.addEventListener('click', function(evt) {
         	addPoint(mousePos.x, mousePos.y);
         	bezier(x,y);
         }else{
-      	adaugam punct la curba bezier
+      	// adaugam punct la curba bezier
       	clear();
       	bezier(x,y);
       }
