@@ -118,16 +118,14 @@ canvas.addEventListener('click', function(evt) {
         pclicked = pointClicked(mousePos);
 
         if(pclicked){
-        	x.splice(pclicked,1);
-        	y.splice(pclicked,1);
-        	n--;
-        	clear();
+        	// x.splice(pclicked,1);
+        	// y.splice(pclicked,1);
+        	// n--;
+        	// clear();
+        	addPoint(mousePos.x, mousePos.y);
         	bezier(x,y);
         }else{
-
-
       	//adaugam punct la curba bezier
-      	addPoint(mousePos.x, mousePos.y);
       	clear();
       	bezier(x,y);
       }
